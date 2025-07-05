@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <nav id="navabar">
+        <a href="#tableSection">Table</a>
+        <a href="#formSection">Form</a>
+        <a href="#animationSection">Animation</a>
+        <a href="#flexSection">Flex</a>
+        <a href="#gridSection">Grid</a>
+        <a href="#positionSection">Css position</a>
+      </nav>
+
+      <section id="tableSection">
+        <header>
+          <h2>🌟 What is an HTML Table?</h2>
+          <p>
+            An HTML table is used to display data in rows and columns, just like
+            an Excel sheet.
+          </p>
+        </header>
+
+        <section id="table">
+          <!-- section 1 -->
+          <section>
+            <header>
+              <h1>Example 1</h1>
+            </header>
+            <br />
+
+            <table border="1" cellpadding="20" cellspacing="2" id="table1">
+              <thead>
+                <tr>
+                  <th rowspan="3">Day</th>
+                  <th colspan="3">Seminar</th>
+                </tr>
+                <tr>
+                  <th colspan="2">Schedule</th>
+                  <th rowspan="2">Topic</th>
+                </tr>
+                <tr>
+                  <th>Begin</th>
+                  <th>End</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">Monday</td>
+                  <td rowspan="2">8:00 am</td>
+                  <td rowspan="2">5:00 pm</td>
+                  <td>Inroduction to html</td>
+                </tr>
+                <tr>
+                  <td>Html tags and their attributes</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">Tuseday</td>
+                  <td>8:00 am</td>
+                  <td>11:00 am</td>
+                  <td rowspan="2">CSS Learning</td>
+                </tr>
+                <tr>
+                  <td>8:00 am</td>
+                  <td>11:00 am</td>
+                </tr>
+                <tr>
+                  <td>2:00 am</td>
+                  <td>5:00 am</td>
+                  <td>Javascript learning</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>8:00 am</td>
+                  <td>12:00 am</td>
+                  <td>React js learning</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- section 2 -->
+          <section id="table2">
+            <header>
+              <h1>Example 2</h1>
+            </header>
+
+            <br />
+            <table border="1" cellpadding="20" cellspacing="2">
+              <tr>
+                <th>Product</th>
+                <th>QTY</th>
+                <th>PRICE</th>
+              </tr>
+              <tr>
+                <td>Drink(large)</td>
+
+                <td>1</td>
+                <td>100</td>
+              </tr>
+
+              <tr>
+                <td>Fries(small)</td>
+                <td>2</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>Burger(no pickle)</td>
+                <td>2</td>
+                <td>260</td>
+              </tr>
+              <tr>
+                <td>Pizza(Large scale)</td>
+                <td>1</td>
+                <td>540</td>
+              </tr>
+              <tr>
+                <td colspan="2">Total</td>
+                <td>1020</td>
+              </tr>
+            </table>
+          </section>
+        </section>
+      </section>
+
+      <!------------------ forms --------------------->
+
+      <section id="formSection">
+        <header>
+          <h2>🌟 What is an HTML Form?</h2>
+
+          <p>
+            An HTML form is used to collect user input. For example: when you
+            fill your name, email, or password on a website and click submit —
+            that’s a form!
+          </p>
+        </header>
+        <div id="form">
+          <section id="formSection1">
+            <header>
+              <h1>Example 1</h1>
+            </header>
+            <div id="form1Container">
+              <form>
+                <fieldset id="form2Field">
+                  <legend>Personal Details</legend>
+
+                  <label for="firstname">Firstname: </label>
+                  <input type="text" name="firstname" />
+                  <br />
+                  <br />
+
+                  <label for="middlename">Middlename: </label>
+                  <input type="text" name="middlename" />
+
+                  <br />
+                  <br />
+                  <label for="firstname">Lastname: </label>
+                  <input type="text" name="firstname" />
+                  <br />
+                  <br />
+
+                  <label for="course">Course: </label>
+                  <select>
+                    <option>Course</option>
+                    <option>HTML CSS</option>
+                    <option>Javascript</option>
+                    <option>React js</option>
+                    <option>Angular js</option>
+                    <option>React Native</option>
+                  </select>
+                  <br />
+                  <br />
+
+                  <label for="gender">Gender: </label><br />
+
+                  <input type="radio" name="male" value="Male" />
+                  <label>Male</label><br />
+                  <input type="radio" name="female" value="Female" />
+                  <label>Female</label><br />
+                  <input type="radio" name="other" value="other" />
+                  <label>Other</label><br /><br />
+
+                  <label for="dob"> DOB: </label>
+                  <input type="date" name="dob" value="DOB" /><br /><br />
+
+                  <label for="phone">Phone: </label>
+                  <input
+                    type="number"
+                    name="number"
+                    value="number"
+                  /><br /><br />
+
+                  <label for="address"> Address: </label><br />
+                  <textarea
+                    placeholder="Please add address here"
+                    rows="4"
+                    cols="50"
+                  ></textarea>
+                  <br /><br />
+
+                  <label>Email: </label>
+                  <input type="email" name="email" value="email" />
+
+                  <br /><br />
+
+                  <label>Password: </label>
+                  <input type="password" name="password" value="password" />
+
+                  <br /><br />
+
+                  <label>Re-type Password: </label>
+                  <input
+                    type="password"
+                    name="retypePassword"
+                    value="retypePassword"
+                  />
+
+                  <br /><br />
+                  <input type="checkbox" name="checkbox" value="checkbox" />
+                  <label> Agree to terms and conditions </label>
+
+                  <br /><br />
+                  <label>Choose File: </label>
+                  <input type="file" name="file" value="file" />
+
+                  <br />
+                  <br />
+                  <label>Choose Color: </label>
+                  <input type="color" name="color" value="color" />
+
+                  <br />
+                  <br />
+
+                  <button type="reset" class="form1Btn">Reset</button>
+                  <button type="submit" class="form1Btn">Submit</button>
+                </fieldset>
+              </form>
+            </div>
+          </section>
+          <section id="formSection2">
+            <header>
+              <h1>Example 2</h1>
+            </header>
+            <div id="form2Container">
+              <form id="form2">
+                <fieldset id="form2Field">
+                  <legend id="form2heading">Login</legend>
+
+                  <div class="inputLabelGroup">
+                    <input type="email" name="email" required />
+                    <label>Email</label>
+                  </div>
+                  <div class="inputLabelGroup">
+                    <input type="password" name="email" required />
+                    <label>Password</label>
+                  </div>
+
+                  <p class="form2Para">
+                    <input type="checkbox" />Remember Me
+                    <a href="#">Forget Password</a>
+                  </p>
+                  <input type="button" value="Login" id="form2Btn" />
+
+                  <p class="form2Para">
+                    Don't have Account? <a href="#">Register</a>
+                  </p>
+                </fieldset>
+              </form>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!------------------- animation -------------------->
+
+      <section id="animationSection">
+        <section id="animation1">
+          <header>
+            <h1>🔹 Animation On Scroll</h1>
+            <div id="animationContainer1">
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block"></div>
+            </div>
+          </header>
+        </section>
+
+        <section id="animation2">
+          <header>
+            <h1>🔹 Animation On Box</h1>
+            <div class="animationContainer2"></div>
+            <div class="animationContainer2"></div>
+            <div class="animationContainer2"></div>
+            <div class="animationContainer2"></div>
+          </header>
+        </section>
+      </section>
+
+      <!-- flexbox with All key properties -->
+      <section id="flexSection">
+        <header>
+          <h2>🌟 Flexbox with All Key Properties</h2>
+        </header>
+
+        <div class="flexContainer">
+          <div class="flexBox">Box 1</div>
+          <div class="flexBox">Box 2 (Grow 2x)</div>
+          <div class="flexBox">Box 3</div>
+          <div class="flexBox">Box 4</div>
+          <div class="flexBox">Box 5</div>
+          <div class="flexBox">Box 6</div>
+          <div class="flexBox">Box 7</div>
+        </div>
+
+        <div class="flexShrinkContainer">
+          <header>
+            <h3>🔹 Visible `flex-shrink` Example</h3>
+          </header>
+
+          <div class="flexShrink">
+            <div class="shrink">Shrink: 1</div>
+            <div class="noShrink">Shrink: 0</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- grid with All key properties -->
+      <section id="gridSection">
+        <header>
+          <h2>🌟 Grid with All Key Properties</h2>
+        </header>
+
+        <h4>🔹 Example 1:</h4>
+        <div class="gridContainer1">
+          <div class="gridItem1">1</div>
+          <div class="gridItem1">2</div>
+          <div class="gridItem1">3</div>
+          <div class="gridItem1">4</div>
+          <div class="gridItem1">5</div>
+          <div class="gridItem1">6</div>
+        </div>
+
+        <h4>🔹 Example 2:</h4>
+        <div class="gridContainer2">
+          <div class="gridItem2 item1">Span 2 Columns</div>
+          <div class="gridItem2 item2">Span 2 Rows</div>
+          <div class="gridItem2 item3">Box 3</div>
+          <div class="gridItem2 item4">Box 4</div>
+        </div>
+      </section>
+
+      <!--  CSS position Property Types -->
+      <section id="positionSection">
+        <header>
+          <h2>🌟 CSS position Property Types</h2>
+        </header>
+
+        <div class="positionContainer1">
+          <div class="postionItem1 staticBox1">Static</div>
+          <div class="postionItem1 relativeBox1">Relative</div>
+
+          <div class="absolute1">
+            <div class="absoluteBox1">Absolute</div>
+          </div>
+
+          <div class="postionItem1 stickyBox1">Sticky</div>
+          <p>Scroll down to see sticky and fixed box behavior.</p>
+          <div class="positionCheck1"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

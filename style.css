@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+#navabar {
+  background-color: lightblue;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 70px;
+  width: 100%;
+  z-index: 2;
+  border: 1px solid gainsboro;
+  box-shadow: 0px -10px 50px -5px rgba(0, 0, 0, 0.5);
+}
+
+#navabar a {
+  font-size: 20px;
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#navabar a:hover {
+  text-decoration: underline;
+}
+
+/* common */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* table */
+#tableSection {
+  padding: 20px;
+}
+#table {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  padding: 20px;
+  gap: 40px;
+}
+
+#table1,
+#table2 {
+  width: 700px;
+  /* text-align: center; */
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+td,
+th {
+  padding: 15px;
+  border: 1px solid;
+  text-align: center;
+}
+
+/* form */
+
+#form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#formSection {
+  padding: 30px;
+}
+
+#form1Container {
+  background-color: lightgrey;
+  padding: 20px;
+}
+
+#form2Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  height: 500px;
+  margin-inline: 10px;
+  background-color: darkgreen;
+}
+
+#form2Field {
+  padding: 10px;
+}
+
+#form {
+  margin-top: 30px;
+}
+
+#form2Container,
+#form1Container {
+  margin-top: 20px;
+}
+
+#form2 {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+#form2Field {
+  width: 100%;
+  padding: 20px;
+}
+
+#form2heading {
+  color: white;
+  padding: 10px;
+}
+
+#formSection1,
+#formSection2 {
+  width: 50%;
+}
+
+.inputLabelGroup {
+  width: 700;
+  margin: 30px 0;
+  position: relative;
+  border-bottom: 3px solid white;
+}
+
+.inputLabelGroup input {
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0 30px 0 10px;
+}
+
+.inputLabelGroup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  transition: 0.5s;
+  color: white;
+}
+
+.form2Para {
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.form2Para > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: burlywood;
+}
+
+.form2Para > a :hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+#form2Btn {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 40px;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#form2Btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.inputLabelGroup input:focus ~ label,
+.inputLabelGroup input:valid ~ label {
+  top: -5px;
+}
+
+.form1Btn {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* animation */
+#animationSection {
+  /* width: 100vw; */
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #f0f0f0;
+  border: 1px dashed #ccc;
+}
+#animationContainer1 {
+  width: "100%";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  /* gap:10px; */
+}
+
+.block {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  animation: onscrollAnimation 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  border: 1px solid black;
+}
+
+.block:nth-child(1) {
+  background-color: red;
+}
+.block:nth-child(2) {
+  background-color: orange;
+  width: 200px;
+}
+.block:nth-child(3) {
+  background-color: yellow;
+  width: 100px;
+}
+.block:nth-child(4) {
+  background-color: green;
+}
+.block:nth-child(5) {
+  background-color: blue;
+  width: 200px;
+}
+.block:nth-child(6) {
+  background-color: indigo;
+  width: 200px;
+}
+.block:nth-child(7) {
+  background-color: violet;
+}
+.block:nth-child(8) {
+  background-color: pink;
+  width: 100px;
+}
+.block:nth-child(9) {
+  background-color: teal;
+}
+.block:nth-child(10) {
+  background-color: brown;
+}
+.block:nth-child(11) {
+  background-color: coral;
+  width: 200px;
+}
+.block:nth-child(12) {
+  background-color: lime;
+  width: 200px;
+}
+.block:nth-child(13) {
+  background-color: cyan;
+  width: 200px;
+}
+.block:nth-child(14) {
+  background-color: magenta;
+}
+.block:nth-child(15) {
+  background-color: gold;
+  width: 100px;
+}
+.block:nth-child(16) {
+  background-color: navy;
+}
+.block:nth-child(17) {
+  background-color: maroon;
+  width: 200px;
+}
+.block:nth-child(18) {
+  background-color: olive;
+}
+.block:nth-child(19) {
+  background-color: skyblue;
+  width: 100px;
+}
+.block:nth-child(20) {
+  background-color: salmon;
+}
+.block:nth-child(21) {
+  background-color: chocolate;
+}
+.block:nth-child(22) {
+  background-color: slateblue;
+  width: 100px;
+}
+.block:nth-child(23) {
+  background-color: tomato;
+}
+.block:nth-child(24) {
+  background-color: gold;
+}
+@keyframes onscrollAnimation {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+#animation2 {
+  /* background-color:lightgray; */
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.animationContainer2 {
+  display: inline-block;
+  background-color: navy;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: moveRight 4s ease-in-out infinite;
+  margin-block: 30px;
+}
+
+@keyframes moveRight {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 1000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+/* flex-box */
+#flexSection {
+  background-color: #f0f0f0;
+  border: 1px dashed #ccc;
+  padding: 30px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  height: 160px;
+}
+
+.flexBox {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexBox:nth-child(2) {
+  flex-grow: 2;
+}
+
+.flexShrinkContainer {
+  height: 100%;
+  margin-top: 50px;
+}
+
+.flexShrink {
+  display: flex;
+  width: 300px;
+  height: 150px;
+  /* border: 2px solid black; */
+  padding: 20px;
+}
+
+.shrink {
+  flex-shrink: 1;
+  width: 200px;
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+
+.noShrink {
+  flex-shrink: 0;
+  width: 200px;
+  background-color: lightcoral;
+  padding: 10px;
+  text-align: center;
+}
+
+/* grid section */
+#gridSection {
+  padding: 30px;
+}
+
+.gridContainer1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.gridItem1 {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridContainer2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+  place-items: center;
+  padding: 10px;
+}
+
+.gridItem2 {
+  background-color: lightseagreen;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item1 {
+  grid-column: span 2;
+}
+.item2 {
+  grid-row: span 2;
+}
+
+/* position */
+#positionSection {
+  padding: 30px;
+  border: 1px dashed lightblue;
+}
+#positionSection h4 {
+  margin-bottom: 20px;
+}
+
+.positionContainer1 {
+  height: 1200px; /* To enable scrolling */
+  padding: 20px;
+}
+
+.postionItem1 {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.staticBox1 {
+  background: gray;
+  position: static;
+}
+
+.relativeBox1 {
+  background: blue;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.absolute1 {
+  position: relative;
+  height: 150px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  margin-top: 60px;
+}
+
+.absoluteBox1 {
+  background: lightseagreen;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.stickyBox1 {
+  background: purple;
+  position: sticky;
+  top: 150px;
+  z-index: 1;
+}
+
+.positionCheck1 {
+  height: 880px;
+  border: 1px dashed;
+}
